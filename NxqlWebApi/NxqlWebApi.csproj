@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <IsPublishable>True</IsPublishable>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Title>NXQL Web API PowerShell Module</Title>
+    <Authors>davidjamesmarley</Authors>
+    <Description>Nexthink NXQL Web API PowerShell module</Description>
+    <PackageProjectUrl>https://davidjamesmarley.github.io/NxqlWebApi/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/davidjamesmarley/NxqlWebApi</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Nexthink;NXQL;WebAPI;PowerShell;pwsh</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>portable</DebugType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
